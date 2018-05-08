@@ -1,0 +1,51 @@
+/* CSS declarations go here */
+body, html {
+    height: 100%;
+    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("/Linda_bg.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#logo {
+  max-width:15vw;
+}
+
+.title {
+  text-transform: uppercase;
+  color:white;
+  font-size:8vw;
+}
+
+.title-row {
+  padding-top: 15%;
+}
+
+#soon-btn {
+  font-size: 38px;
+  border: 2px solid white;
+  line-height: 65px;
+  height: 65px;
+}
+
+.social-icons {
+  display:inline-block;
+  padding-left:1vw;
+  padding-right:1vw;
+}
+
+.title-items {
+  display:inline-block;
+
+}
