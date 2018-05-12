@@ -29,11 +29,11 @@ body, html {
 }
 
 .title-row {
-  padding-top: 15%;
+  padding-top: 5%;
 }
 
 #soon-btn {
-  font-size: 38px;
+  font-size: 3vw;
   border: 2px solid white;
   line-height: 65px;
   height: 65px;
