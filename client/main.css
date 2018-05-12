@@ -45,6 +45,9 @@ body, html {
   padding-right:1vw;
 }
 
+.social-icons a {
+  color:black;
+}
 .title-items {
   display:inline-block;
 
