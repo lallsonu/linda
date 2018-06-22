@@ -22,7 +22,7 @@ module.exports = {
       serverOnly: true
     },
     env: {
-      ROOT_URL: 'http://lindaluztono.com',
+      ROOT_URL: 'https://lindaluztono.com',
       MONGO_URL: 'mongodb://localhost/meteor'
     }
   },
@@ -31,5 +31,16 @@ module.exports = {
     servers: {
       one: {}
     }
-  }
+  },
+    proxy: {
+      domains: 'lindaluztono.com,www.lindaluztono.com',
+      ssl: {
+        // Enable let's encrypt to create free certificates.
+        // The email is used by Let's Encrypt to notify you when the
+        // certificates are close to expiring.
+        letsEncryptEmail: 'sukhwinder.s.lall@gmail.com',
+        forceSSL: true
+      }
+    }
+
 };

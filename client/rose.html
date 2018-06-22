@@ -1,0 +1,12 @@
+<template name="rose">
+              
+                <a-scene embedded arjs='debugUIEnabled:false; patternRatio:0.75; '>
+                  <a-assets>
+                    <img id="logo" src="/Linda_Logo.png">
+                  </a-assets>
+                  <a-marker-camera type='pattern' url='/marker.patt'>
+                    <a-plane position="0 -5 0" src="#logo" rotation="-90 0 0" width="4" height="4"></a-plane>
+                  </a-marker-camera>
+                </a-scene>
+              
+</template>
