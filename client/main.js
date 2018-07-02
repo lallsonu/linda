@@ -10,4 +10,20 @@ Router.route('/', function () {
   Router.route('/rose');
 if (Meteor.isClient) {
   
+  Meteor.startup(function () {
+  
+
+});
+      // let playing = false;
+      // let audio = document.querySelector("#song");
+      // this.el.addEventListener('click', () => {
+      //   if (!playing) {
+      //     audio.play();
+      //   } else {
+      //     audio.pause();
+      //     audio.currentTime = 0;
+      //   }
+      //   playing = !playing;
+      // });
+  
 }

@@ -11,11 +11,60 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-120908454-1');
-
   
 </script>
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+
+
+<script>
+   //To avoid playing from start if the marker flickers, not sure if needed, but it might be a failsafe when you have mutiple markers and want to make sure the first finishes before launching the second
+var playing = false;
+
+//HTML5 audio, will need user touch input to start on mobile
+var intro = new Audio("/blind.m4a");
+
+//Detect end of audio
+intro.addEventListener("ended", function() {
+	intro.currentTime = 0;
+	playing = false;
+});
+
+AFRAME.registerComponent('audiohandler', {
+    schema: {
+      color: {default: 'pink'}
+    },
+
+    init: function () {
+      var data = this.data;
+      var el = this.el;  // <a-box>
+      var defaultColor = el.getAttribute('material').color;
+
+      el.addEventListener('mouseenter', function () {
+        el.setAttribute('color', data.color);
+
+
+          if (document.querySelector("#jukebox").object3D.visible == true && playing == false) {
+            intro.play();
+            playing = true;
+          } else if(playing == true) {
+            intro.pause();
+            playing = false;
+          }
+      });
+
+      el.addEventListener('mouseleave', function () {
+        el.setAttribute('color', defaultColor);
+        if(playing == true) {
+            intro.pause();
+            playing = false;
+          }
+      });
+    }
+  });
+
+</script>
 
 </head>
 
