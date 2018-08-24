@@ -11,9 +11,20 @@ Router.route('/', function () {
 if (Meteor.isClient) {
   
   Meteor.startup(function () {
+
   
 
 });
+
+Template.main.events({
+  'click #subscribe-btn': function(){
+      $("#subscribe-section").show();
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#subscribe-section").offset().top
+    }, 500);
+  }
+});
+
       // let playing = false;
       // let audio = document.querySelector("#song");
       // this.el.addEventListener('click', () => {
