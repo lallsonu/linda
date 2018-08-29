@@ -2,14 +2,14 @@
               
                 <a-scene embedded arjs='debugUIEnabled:false; patternRatio:0.75; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
                   <a-assets>
-                    <!-- <img id="logo" src="/Linda_Logo.png"> -->
+                    <img id="logo" src="/arMarker.png">
 
                     <!-- <audio id="song" crossorigin="anonymous" src="/blind.m4a"></audio> -->
                     
                   </a-assets>
                   <a-marker-camera type='pattern' url='/marker.patt' id="jukebox" cursor="rayOrigin: mouse">
        
-                    <a-box position='0 0.5 0' material='opacity: 0.9;' audiohandler></a-box>
+                    <a-box position='0 0.5 0' material='opacity: 1.0' src="#logo" audiohandler></a-box>
 
                   </a-marker-camera>
                 </a-scene>
