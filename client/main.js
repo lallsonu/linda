@@ -7,7 +7,7 @@ Router.route('/', function () {
     this.render('main');
   });
 
-  Router.route('/rose');
+  Router.route('/newmusic');
 if (Meteor.isClient) {
   
   Meteor.startup(function () {
