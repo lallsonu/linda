@@ -20,6 +20,7 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"99111cf9dbec522fd063294f3","lid":"0601f2a018","uniqueMethods":true}) })</script>
 
 
 <script>
@@ -54,9 +55,18 @@ AFRAME.registerComponent('audiohandler', {
     }
   });
 
+  
+
 </script>
 
 
+
+<style>
+  #PopupSignupForm_0 {
+      z-index: 99999;
+      position: relative;
+  }
+  </style>
 
 
 </head>
@@ -99,10 +109,7 @@ AFRAME.registerComponent('audiohandler', {
         </div>
         
         <div class="row valign-wrapper" style="padding-top:20px;">
-            <div class="col l2 m2 s12">
-                <a class="waves-effect waves-dark btn grey darken-2 center-align " id="subscribe-btn">Subscribe</a>
-
-            </div>  
+         
           <div class="l10  col m10 s12 right-align ">
               <div class="social-icons"><a href="https://www.facebook.com/Linda-Luztono-61743937114/" target="_blank" class="zmdi zmdi-facebook zmdi-hc-3x"></a></div>
               <div class="social-icons"><a href="https://twitter.com/lindaluztono" target="_blank" class="zmdi zmdi-twitter zmdi-hc-3x"></a></div>
@@ -115,34 +122,12 @@ AFRAME.registerComponent('audiohandler', {
 
 
           </div>
+
           </div>
-          <div class="row" id="subscribe-section">
-              <!-- Begin MailChimp Signup Form -->
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <div id="mc_embed_signup">
-    <form action="https://eufor.us15.list-manage.com/subscribe/post?u=ddbe257caaf84cb0bda468685&amp;id=0153d069c8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-      <label for="mce-EMAIL">Subscribe to Linda's mailing list</label>
-      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ddbe257caaf84cb0bda468685_0153d069c8" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-    </form>
-    </div>
-    
-    <!--End mc_embed_signup-->
-            </div>
          
        
       
      </div>
     </div>
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"ddbe257caaf84cb0bda468685","lid":"0153d069c8"}) })</script>
 
 </template>

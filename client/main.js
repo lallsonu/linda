@@ -5,6 +5,7 @@ import './main.html';
 
 Router.route('/', function () {
     this.render('main');
+    
   });
 
   Router.route('/newmusic');
